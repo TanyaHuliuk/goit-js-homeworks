@@ -5,7 +5,7 @@ let ordered = 20;
 
 let message;
 
-const isInRange = ordered > total;
+const isInRange = ordered < total;
 
 if (isInRange) {
   message = 'На складе недостаточно твоаров!';
