@@ -7,7 +7,7 @@ let sameMessage = `Выбран ${name}, цена за штуку ${prise} кр�
 
 console.log(sameMessage);
 
-let prise = 2000;
-let sameMessage = `Выбран ${name}, цена за штуку ${prise} кредитов.`;
+// let prise = 2000;
+// let sameMessage = `Выбран ${name}, цена за штуку ${prise} кредитов.`;
 
-console.log(sameMessage);
+// console.log(sameMessage);
