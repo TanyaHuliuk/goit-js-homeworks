@@ -8,6 +8,6 @@ let sameMessage = `Выбран ${name}, цена за штуку ${prise} кр�
 console.log(sameMessage);
 
 prise = 2000;
-// let sameMessage = `Выбран ${name}, цена за штуку ${prise} кредитов.`;
+let sameMessage = `Выбран ${name}, цена за штуку ${prise} кредитов.`;
 
 console.log(sameMessage);
