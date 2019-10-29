@@ -1,6 +1,13 @@
 'use strict';
 
-const x = 10;
-const y = 5;
+let name = '"Генератор защитного поля"';
+let prise = 1000;
 
-console.log(x + y);
+let sameMessage = `Выбран ${name}, цена за штуку ${prise} кредитов.`;
+
+console.log(sameMessage);
+
+let prise = 2000;
+let sameMessage = `Выбран ${name}, цена за штуку ${prise} кредитов.`;
+
+console.log(sameMessage);
