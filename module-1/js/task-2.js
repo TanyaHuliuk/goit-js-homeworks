@@ -3,34 +3,34 @@
 let total = 100;
 let ordered = 20;
 
-let message;
+// let message;
 
 const isInRange = ordered > total;
 
 if (isInRange) {
-  message = 'На складе недостаточно товаров!';
+  console.log('На складе недостаточно товаров!');
 } else {
-  message = 'Заказ оформлен, с вами свяжется менеджер';
+  console.log('Заказ оформлен, с вами свяжется менеджер');
 }
 
-console.log(message);
+// console.log(message);
 
 ordered = 80;
 
 if (isInRange) {
-  message = 'На складе недостаточно товаров!';
+  console.log('На складе недостаточно товаров!');
 } else {
-  message = 'Заказ оформлен, с вами свяжется менеджер';
+  console.log('Заказ оформлен, с вами свяжется менеджер');
 }
 
-console.log(message);
+// console.log(message);
 
 ordered = 130;
 
 if (isInRange) {
-  message = 'На складе недостаточно товаров!';
+  console.log('На складе недостаточно товаров!');
 } else {
-  message = 'Заказ оформлен, с вами свяжется менеджер';
+  console.log('Заказ оформлен, с вами свяжется менеджер');
 }
 
-console.log(message);
+// console.log(message);
