@@ -16,7 +16,7 @@ if (isInRange) {
 console.log(message);
 
 ordered = 80;
-isInRange = ordered > total;
+// isInRange = ordered > total;
 
 if (isInRange) {
   message = 'На складе недостаточно твоаров!';
