@@ -1,36 +1,39 @@
 'use strict';
 
 let total = 100;
-let ordered = 20;
+let ordered = 50;
 
-// let message;
-
-const isInRange = ordered > total;
+let isInRange = ordered < total;
 
 if (isInRange) {
-  console.log('На складе недостаточно товаров!');
-} else {
   console.log('Заказ оформлен, с вами свяжется менеджер');
+} else {
+  console.log('На складе недостаточно твоаров!');
 }
 
-// console.log(message);
+ordered = 20;
+isInRange = ordered < total;
+
+if (isInRange) {
+  console.log('Заказ оформлен, с вами свяжется менеджер');
+} else {
+  console.log('На складе недостаточно твоаров!');
+}
 
 ordered = 80;
+isInRange = ordered < total;
 
 if (isInRange) {
-  console.log('На складе недостаточно товаров!');
-} else {
   console.log('Заказ оформлен, с вами свяжется менеджер');
+} else {
+  console.log('На складе недостаточно твоаров!');
 }
-
-// console.log(message);
 
 ordered = 130;
+isInRange = ordered < total;
 
 if (isInRange) {
-  console.log('На складе недостаточно товаров!');
-} else {
   console.log('Заказ оформлен, с вами свяжется менеджер');
+} else {
+  console.log('На складе недостаточно твоаров!');
 }
-
-// console.log(message);
