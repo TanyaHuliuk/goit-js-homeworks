@@ -1,14 +1,12 @@
 'use strict';
 
 const checkForSpam = function(string) {
-  let Str = string.split(/\b/);
-
-  for (let i = 0; i < Str.length; i++) {
-    let word = Str[i].toLowerCase();
-
-    if (word === 'spam' || word === 'sale') {
-      return true;
-    }
+  const Words = ['spam', 'sale'];
+  if (
+    string.toLowerCase().includes('spam') ||
+    string.toLowerCase().includes('sale')
+  ) {
+    return true;
   }
   return false;
 };
@@ -20,3 +18,16 @@ console.log(checkForSpam('JavaScript weekly newsletter')); // false
 console.log(checkForSpam('Get best sale offers now!')); // true
 
 console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+
+// Задание 5
+// Напиши функцию checkForSpam(str), принимающую 1 параметр string - строку. Функция проверяет ее на содержание слов spam и sale. Если нашли зарещенное слово то функция возвращает true, если запрещенных слов нет функция возвращает false. Слова в строке могут быть в произвольном регистре.
+
+// Вызовы функции для проверки работоспособности твоей реализации.
+
+// console.log(checkForSpam('Latest technology news')); // false
+
+// console.log(checkForSpam('JavaScript weekly newsletter')); // false
+
+// console.log(checkForSpam('Get best sale offers now!')); // true
+
+// console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
