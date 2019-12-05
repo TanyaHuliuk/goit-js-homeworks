@@ -23,3 +23,5 @@ console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер
 console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
 
 console.log(getAllPropValues(products, 'category')); // []
+
+// перебираешь все элементы массива и если элемент содержит свойство с именем prop, то ты кладешь значение в результирующий массив
