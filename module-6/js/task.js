@@ -19,11 +19,18 @@ const getUsersWithEyeColor = (users, color) => {
 console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 // Задание 3
-const getUsersWithGender = (users, gender) => {
-  return users.filter(user => user.gender === gender).map(user => user.name);
-};
+// const getUsersWithGender = (users, gender) => {
+//   return users.filter(user => user.gender === gender).map(user => user.name);
+// };
 
-console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+const getUsersWithGender = (users, selectedGender) =>
+  users
+    .filter(({ gender }) => gender === selectedGender)
+    .map(({ name }) => name);
+
+console.log(getUsersWithGender(users, 'male'));
 
 // Задание 4
 const getInactiveUsers = users => {
